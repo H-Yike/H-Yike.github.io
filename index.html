@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>HYK&#x7684;Github page</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h1 id="hyk的github-page">HYK的Github page</h1>
+<h2 id="part1-课堂笔记">PART1 课堂笔记</h2>
+<h3 id="11--a-few-questions">1.1  A few questions</h3>
+<ul>
+<li>What is gene？</li>
+<li>Which organism has the largest genome?</li>
+<li>Why do humans have so few genes?<br>
+--Because percent of genome not coding for protein.</li>
+</ul>
+<h3 id="12-sequencing-technologies">1.2 Sequencing technologies</h3>
+<h3 id="13-算法algorithm--模型model">1.3 算法(algorithm) &amp; 模型(model)</h3>
+<p>算法是指一种逻辑规则指定的流程，用于解决问题的思想和方法。<br>
+模型是在训练数据上运行算法后保存的“东西”，它表示用于进行预测所需的规则、参数和任何其他特定于算法的数据结构。</p>
+<h2 id="part2-about-homework">PART2 About homework</h2>
+<h3 id="11-vim的使用">1.1) Vim的使用</h3>
+<p>-&gt; 打开docker app<br>
+-&gt; cmd输入 <strong>docker exec -it Huang_YK bash</strong> (Huang_YK 是我的container名称)<br>
+-&gt; 输入 vim 文件名（存在或不存在都可)<br>
+-&gt; i:INSERT模式，可输入文字<br>
+-&gt; Esc退出输入模式，进入命令模式<br>
+-&gt; 输入“:”，将进入底线命令模式
+-&gt; :w 保存  :q 退出vim :wq 保存并退出 :q! 强制退出</p>
+<h3 id="12-如何把网络学堂下载到hostwindows-11里的文件共享给dockerlinux">1.2) 如何把网络学堂下载到host(windows 11)里的文件共享给Docker(Linux)?</h3>
+<p>-&gt; 打开cmd<br>
+-&gt; docker cp 文件所在的宿主机路径 容器名称:/container内路径</p>
+<h3 id="13-github-github-desktop与-vscode">1.3) Github, github desktop与 VScode</h3>
+<ol>
+<li>在Github上创建repository</li>
+<li>在Github desktop 上 File-&gt;Add local repository</li>
+<li>用VScode打开</li>
+<li>可以修改或添加文件（通过改文件名后缀可以直接改格式）</li>
+<li>Ctrl+s快速保存</li>
+<li>在Github desktop 上 <strong>Commit to main</strong></li>
+<li>Push to origin</li>
+</ol>
+<h2 id="part3-本学期bioinformatics的学习计划">PART3 本学期Bioinformatics的学习计划</h2>
+<p><strong>课前预习!</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">时间</th>
+<th style="text-align:center">学习内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">第2-3周</td>
+<td style="text-align:center">Linux 私房菜，chapter 1-3，Blast</td>
+</tr>
+<tr>
+<td style="text-align:center">第4周</td>
+<td style="text-align:center">NGS,Mapping,R语言基础教程</td>
+</tr>
+<tr>
+<td style="text-align:center">第5周</td>
+<td style="text-align:center">DNA-seq,R语言基础教程</td>
+</tr>
+<tr>
+<td style="text-align:center">第6-7周</td>
+<td style="text-align:center">RNA-seq,GO,KEGG,R语言基础教程</td>
+</tr>
+</tbody>
+</table>
+<p>后续计划将根据前几周的情况安排。</p>
+
+            
+            
+        </body>
+        </html>

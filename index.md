@@ -32,7 +32,7 @@
 4. 可以修改或添加文件（通过改文件名后缀可以直接改格式）  
 5. Ctrl+s快速保存  
 6. 在Github desktop 上 **Commit to main**  
-7. Fetch origin
+7. Push to origin
 
 ## PART3 本学期Bioinformatics的学习计划  
  **课前预习!**  

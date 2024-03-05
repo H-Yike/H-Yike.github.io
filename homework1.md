@@ -10,9 +10,9 @@ wc -c test_command.gtf==
    -> **636 test_command.gtf**   
 ## 2.利用 grep 等命令尝试筛选并输出示例文件中以 chr_ 起始，并且基因id为 YDL248W 的行。    
   
-  **grep -E 'chr_.*YDL248W' test_command.gtf**   
+grep -E 'chr_.*YDL248W' test_command.gtf   
 
-chr_IV  ensembl gene    1802    2953    .       +       .       gene_id "YDL248W"; gene_version "1";    
+> chr_IV  ensembl gene    1802    2953    .       +       .       gene_id "YDL248W"; gene_version "1";    
 chr_IV  ensembl transcript      802     2953    .       +       .       gene_id "YDL248W"; gene_version "1";    
 chr_IV  ensembl start_codon     1802    1804    .       +       0       gene_id "YDL248W"; gene_version "1";  
 

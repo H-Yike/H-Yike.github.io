@@ -40,12 +40,4 @@ test@bioinfo_docker:~/homework$ awk '{print $1, $3, $4, $5}' test_command.gtf
     chr_IV transcript 3762 836  
 
 ## 4.互换示例文件的第2列和第3列，并且对输出结果利用 sort 命令依照第4和第5列数字大小排序，将最终结果输出到result.gtf文件中
-test@bioinfo_docker:~/homework$ awk '{tmp = $2; $2 = $3; $3 = tmp; print $0}' test_command.gtf
-    chr_IV gene ensembl 1802 2953 . + . gene_id "YDL248W"; gene_version "1";
-    chr_IV transcript ensembl 802 2953 . + . gene_id "YDL248W"; gene_version "1";
-    chromosome_IV exon ensembl 1802 2953 . + . gene_id "YDL248W"; gene_version "1";
-    chromosome_IV CDS ensembl 1802 950 . + 0 gene_id "YDL248W"; gene_version "1";
-    chr_IV start_codon ensembl 1802 1804 . + 0 gene_id "YDL248W"; gene_version "1";
-    chromosome_IV stop_codon ensembl 2951 2953 . + 0 gene_id "YDL248W"; gene_version "1";
-    chromosome_IV gene ensembl 762 3836 . + . gene_id "YDL247W-A"; gene_version "1";
-    chr_IV transcript ensembl 3762 836 . + . gene_id "YDL247W-A"; gene_version "1";
+test@bioinfo_docker:~/homework$ awk '{temp=$2; $2 = $3; $3 = temp; print;}' test_command.gtf | sort -k 4,5 -n > result.gtf

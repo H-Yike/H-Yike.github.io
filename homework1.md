@@ -4,10 +4,11 @@
   
   //文件行数  
 wc -l test_command.gtf  
-   -> **8 test_command.gtf**   
+   > **8 test_command.gtf**   
+
 //文件字符数 
 wc -c test_command.gtf==  
-   -> **636 test_command.gtf**   
+> **636 test_command.gtf**   
 ## 2.利用 grep 等命令尝试筛选并输出示例文件中以 chr_ 起始，并且基因id为 YDL248W 的行。    
   
 grep -E 'chr_.*YDL248W' test_command.gtf   
@@ -30,4 +31,4 @@ awk '{temp=$2; $2 = $3; $3 = temp; print;}' test_command.gtf | sort -k 4,5 -n > 
 ls -hl test_command.gtf  
 //指令    
 chmod 774 test_command.gtf   
-//前后变化    -rwxr--r--   ->    -rwxrwxr--
+>//前后变化    -rwxr--r--   ->    -rwxrwxr--

@@ -148,9 +148,16 @@
 --Because percent of genome not coding for protein.</li>
 </ul>
 <h3 id="12-sequencing-technologies">1.2 Sequencing technologies</h3>
+<ul>
+<li>一代：Maxam-Gilbert 化学降解法，Sanger法</li>
+<li>二代：Roche 454焦磷酸测序，Illumina Solexa合成测序，ABI SOLiD连接法测序</li>
+<li>三代：SMRT技术，nanopore sequencing</li>
+</ul>
 <h3 id="13-算法algorithm--模型model">1.3 算法(algorithm) &amp; 模型(model)</h3>
-<p>算法是指一种逻辑规则指定的流程，用于解决问题的思想和方法。<br>
-模型是在训练数据上运行算法后保存的“东西”，它表示用于进行预测所需的规则、参数和任何其他特定于算法的数据结构。</p>
+<blockquote>
+<p><strong>算法</strong>是指一种逻辑规则指定的流程，用于解决问题的思想和方法。<br>
+<strong>模型</strong>是在训练数据上运行算法后保存的“东西”，通常基于已有的数据和假设用于解释和预测未来数据。它表示用于进行预测所需的规则、参数和任何其他特定于算法的数据结构。</p>
+</blockquote>
 <h2 id="part2-about-homework">PART2 About homework</h2>
 <h3 id="11-vim的使用">1.1) Vim的使用</h3>
 <p>-&gt; 打开docker app<br>
@@ -161,8 +168,11 @@
 -&gt; 输入“:”，将进入底线命令模式
 -&gt; :w 保存  :q 退出vim :wq 保存并退出 :q! 强制退出</p>
 <h3 id="12-如何把网络学堂下载到hostwindows-11里的文件共享给dockerlinux">1.2) 如何把网络学堂下载到host(windows 11)里的文件共享给Docker(Linux)?</h3>
-<p>-&gt; 打开cmd<br>
--&gt; docker cp 文件所在的宿主机路径 容器名称:/container内路径</p>
+<p>两种方法：</p>
+<ol>
+<li>docker cp 文件所在的宿主机路径 容器名称:/container内路径</li>
+<li>-v ~/Desktop/bioinfo_tsinghua_share:/home/test/share: 将宿主机的目录~/Desktop/bioinfo_tsinghua_share作为数据卷挂载到_container的/home/test/share目录下。docker通过数据卷(volume)实现宿主机和container之间的文件同步。文件下载在此处即可在docker上找到。</li>
+</ol>
 <h3 id="13-github-github-desktop与-vscode">1.3) Github, github desktop与 VScode</h3>
 <ol>
 <li>在Github上创建repository</li>
@@ -174,7 +184,7 @@
 <li>Push to origin</li>
 </ol>
 <h2 id="part3-本学期bioinformatics的学习计划">PART3 本学期Bioinformatics的学习计划</h2>
-<p><strong>课前预习!</strong></p>
+<p>每周进行 <strong>课前预习!</strong></p>
 <table>
 <thead>
 <tr>
